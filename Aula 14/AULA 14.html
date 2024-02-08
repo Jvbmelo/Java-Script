@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Carros</h1>
+    </header>
+
+    <main>
+        <form id="carForm">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" min="1900" max="2099" required>
+
+            <label for="cor">Cor:</label>
+            <input type="text" id="cor" name="cor" required>
+
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca" required>
+                <option value="">Selecione a marca</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ford">Ford</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+</body>
+</html>
